@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "imap": "^0.8.19",
     "mailparser": "^3.4.0"
   }

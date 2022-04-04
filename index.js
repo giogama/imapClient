@@ -1,11 +1,12 @@
 const Imap = require('imap');
 const { simpleParser } = require('mailparser');
+const { emailAccount, passwordAccount, mailServer, port } = require('./config.js')
 
 const imapConfig = {
-  user: 'giogama@gmail.com',
-  password: 'atdmctujmoeocgmh',
-  host: 'imap.gmail.com',
-  port: 993,
+  user: emailAccount,
+  password: passwordAccount,
+  host: mailServer,
+  port: port,
   tls: true,
   tlsOptions: { 
     rejectUnauthorized: false, 
